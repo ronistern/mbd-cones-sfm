@@ -1,0 +1,9 @@
+c17.
+[i1,i2,i3,i4,i5].
+[o1,o2].
+[[nand2,gate10,[f,s0],z1,i1,i3],
+[nand2,gate11,[s0],z2,i3,i4],
+[nand2,gate16,[s1],z3,i2,z2],
+[nand2,gate19,[f,s0],z4,z2,i5],
+[nand2,gate22,[s0],o1,z1,z3],
+[nand2,gate23,[f,s1],o2,z3,z4]].

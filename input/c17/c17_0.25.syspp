@@ -1,0 +1,31 @@
+% Preprocess time: 0.007735490798950195 ms.
+% System ID
+c17.
+% System Inputs
+[
+i1,i2,i3,i4,i5
+].
+% System Outputs
+[
+o1,o2
+].
+% System Gates
+[
+(gate10,z1,[i1,i3],nand,dominated,[f,s0]),
+(gate11,z2,[i3,i4],nand,free,[s0]),
+(gate16,z3,[i2,z2],nand,free,[s1]),
+(gate19,z4,[z2,i5],nand,dominated,[f,s0]),
+(gate22,o1,[z1,z3],nand,dominator,[s0]),
+(gate23,o2,[z3,z4],nand,dominator,[f,s1])
+].
+% System Sections
+[
+(section1,[gate10,gate22],1),
+(section2,[gate11,gate16],2),
+(section3,[gate19,gate23],1)
+].
+% System Cones
+[
+(gate22,[gate10]),
+(gate23,[gate19])
+].
